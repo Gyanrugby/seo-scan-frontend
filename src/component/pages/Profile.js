@@ -22,8 +22,8 @@ const Profile = props => {
                 </div>
                 <div className="profile__info">
                     <h2>{user && user.name}</h2>
-                    <p>joined at: {user && user.cleatedAt}</p>
-                    <p onClick={e => sign_out()} ><span className="sign__out">sign out</span>  </p>
+                    <p>Aangemaakt op: {user && user.cleatedAt}</p>
+                    <p onClick={e => sign_out()} ><span className="sign__out">Uitloggen</span>  </p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ const Profile = props => {
                         <div className="history_list">
                             <div className="history_list__all">
                                 <div className="keywordList__heading">
-                                    <h3>search history</h3>
+                                    <h3>Zoek historie</h3>
                                 </div>
                                 <ul>
                                     {

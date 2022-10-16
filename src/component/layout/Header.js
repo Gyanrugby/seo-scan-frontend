@@ -19,7 +19,7 @@ const Header = () => {
                             <img width="30" src={Avatar}  alt="avatar of each user" />
                         </Link>
                     ) : (
-                        <Link to="/sign-in"><button>sign in</button></Link>
+                        <Link to="/sign-in"><button>Log in</button></Link>
                     )
                 }
             </header>
