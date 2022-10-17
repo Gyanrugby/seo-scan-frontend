@@ -29,7 +29,7 @@ header {
 
 header button {
   color: #f1f1f1;
-  background-color: #ff1744;
+  background-color: #476760;
   border: none;
   cursor: pointer;
   border-radius: 999px;
@@ -41,7 +41,7 @@ header button {
 
 .avatar img {
   border-radius: 49%;
-  border: 2px solid #ff1744;
+  border: 2px solid #476760;
 }
 
 /* HEADER END */
@@ -90,7 +90,7 @@ form {
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: #ff1744;
+  background-color: #476760;
   color: #f1f1f1;
   font-weight: 600;
   font-size: 1.1rem;
@@ -164,7 +164,7 @@ form {
 }
 
 .keyword__list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -212,11 +212,11 @@ form {
 }
 
 .keyword_used_pages__list ul li a:hover {
-  color: #ff1744;
+  color: #476760;
 }
 
 .keyword_used_pages__list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -250,7 +250,7 @@ form {
 }
 
 .keyword_instargram__list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -309,7 +309,7 @@ form {
 }
 
 .report__amount {
-  color: #ff1744;
+  color: #476760;
 }
 
 .report__amount span {
@@ -361,7 +361,7 @@ form {
 }
 
 .web_keyword__list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -406,11 +406,11 @@ form {
 }
 
 .sub_domain_list ul li a:hover {
-  color: #ff1744;
+  color: #476760;
 }
 
 .sub_domain_list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -495,7 +495,7 @@ form {
 }
 
 .submit__feild {
-  background-color: #ff1744;
+  background-color: #476760;
   color: #f1f1f1;
   font-weight: 600;
   font-size: 1.1rem;
@@ -514,14 +514,14 @@ form {
 }
 
 .sign_up__link .link__color {
-  color: #ff1744;
+  color: #476760;
 }
 
 .sign_up__link .link__line {
   display: inline-block;
   width: 50vw;
   height: 2px;
-  background-color: #ff1744;
+  background-color: #476760;
 }
 
 /* END AUTH */
@@ -557,7 +557,7 @@ form {
 }
 
 .profile__info .sign__out {
-  color: #ff1744;
+  color: #476760;
   cursor: pointer;
   font-weight: 600;
 }
@@ -603,7 +603,7 @@ form {
 }
 
 .history_list ul li:hover {
-  color: #ff1744;
+  color: #476760;
   background-color: #eff2f5;
 }
 
@@ -625,7 +625,7 @@ form {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff1744;
+  background: #476760;
 }
 
 /* ___end of scroll bar */
@@ -642,7 +642,7 @@ form {
 }
 
 .sign_in__load a span {
-  color: #ff1744;
+  color: #476760;
 }
 
 /* __ end load sign in */
@@ -661,7 +661,7 @@ footer {
 }
 
 footer span {
-  color: #ff1744;
+  color: #476760;
 }
 
 
@@ -693,7 +693,7 @@ footer span {
   position: absolute;
   top: 0;
   left: calc(50% - 10px);
-  background-color: #ff1744;
+  background-color: #476760;
   animation: squaremove 1s ease-in-out infinite;
   -webkit-animation: squaremove 1s ease-in-out infinite;
   -webkit-border-radius: 50px;
