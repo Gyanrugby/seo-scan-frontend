@@ -11,7 +11,7 @@ const Instakeyword = () => {
         <div className="keyword__instagram">
             <div className="keyword_instargram__list">
                 <div className="keywordList__heading">
-                    <h3>Instagram related</h3>
+                    <h3>Instagram gerelateerd</h3>
                 </div>
                 {   
                     token ? (
@@ -29,7 +29,7 @@ const Instakeyword = () => {
                                     return <li key={index}>{value}</li>
                                 }) : []
                             }
-                            <li className="sign_in__load"><Link to="/sign-in"> <span>sign in</span> to load more </Link>  </li>
+                            <li className="sign_in__load"><Link to="/sign-in"> <span>Log in </span> om meer te zien </Link>  </li>
                         </ul>
                     )
                 }
