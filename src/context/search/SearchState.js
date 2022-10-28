@@ -21,7 +21,7 @@ const SearchState = props => {
     const setkeyword = async keyword => {
         try {
             setloading()
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/keywords?keyword=${keyword}`)
+            const res = await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/keywords?keyword=${keyword}`)
             dispatch({
                 type: 'MAIN_KEYWORDS',
                 payload: res.data.result
@@ -35,7 +35,7 @@ const SearchState = props => {
     const setpagedused = async keyword => {
         try {
             setloading()
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/pagesused?keyword=${keyword}`)
+            const res = await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/pagesused?keyword=${keyword}`)
             dispatch({
                 type: 'PAGE_USED',
                 payload: res.data.result
@@ -49,7 +49,7 @@ const SearchState = props => {
     const setinstergram = async keyword => {
         try {
             setloading()
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/instagram?keyword=${keyword}`)
+            const res = await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/instagram?keyword=${keyword}`)
             dispatch({
                 type: 'INSTA_KEYWORD',
                 payload: res.data.result
@@ -72,7 +72,7 @@ const SearchState = props => {
         setloading()
 
         try {
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/report?domain=${domain}`)
+            const res = await axios.post(`https://seo-react-gyan.herokuapp.com/api/v1/report`,{domain:domain})
             dispatch({
                 type: 'REPORT',
                 payload: res.data.report
@@ -85,7 +85,7 @@ const SearchState = props => {
     const domainkeyword = async domain => {
         try {
             setloading()
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/domainkeyword?domain=${domain}`)
+            const res = await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/domainkeyword?domain=${domain}`)
             dispatch({
                 type: 'DOMAIN_KEYWORD',
                 payload: res.data.results
@@ -98,7 +98,7 @@ const SearchState = props => {
     const subdomains = async domain => {
         try {
             setloading()
-            const res = await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/subdomains?domain=${domain}`)
+            const res = await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/subdomains?domain=${domain}`)
             dispatch({
                 type: 'SUBDOMAINS',
                 payload: res.data.results

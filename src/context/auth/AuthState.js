@@ -23,7 +23,7 @@ const AuthState = props => {
         }
         try {
             setloading()
-            const res = await axios.get('https://seo-gyan-fontys.vercel.app/api/v1/user')
+            const res = await axios.get('https://seo-react-gyan.herokuapp.com/api/v1/user')
             dispatch({
                 type: 'USER',
                 payload: res.data.user
@@ -43,7 +43,7 @@ const AuthState = props => {
         }
         try {
             setloading()
-            const res = await axios.post(`https://seo-gyan-fontys.vercel.app/api/v1/sign-up`, user, config)
+            const res = await axios.post(`https://seo-react-gyan.herokuapp.com/api/v1/sign-up`, user, config)
             dispatch({
                 type: 'SIGN_UP',
                 payload: res.data
@@ -63,7 +63,7 @@ const AuthState = props => {
         }
         try {
             setloading()
-            const res = await axios.post(`https://seo-gyan-fontys.vercel.app/api/v1/sign-in`, user, config)
+            const res = await axios.post(`https://seo-react-gyan.herokuapp.com/api/v1/sign-in`, user, config)
             dispatch({
                 type: 'SIGN_IN',
                 payload: res.data
@@ -77,7 +77,7 @@ const AuthState = props => {
 
     const history = async word => {
         try {
-            await axios.get(`https://seo-gyan-fontys.vercel.app/api/v1/history?word=${word}`)
+            await axios.get(`https://seo-react-gyan.herokuapp.com/api/v1/history?word=${word}`)
             
         } catch (err) {
             console.log(err)
