@@ -25,7 +25,7 @@ export default (state, action) => {
                 user: null,
                 loading: true
             }
-        case 'SET_LOADING': // SETINF THE LOADING
+        case 'SET_LOADING': // Opzetten van de loading voor return
             return {
                 ...state,
                 loading: true

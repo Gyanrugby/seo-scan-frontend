@@ -8,16 +8,16 @@ const SearchState = props => {
         loading: false,
         searched: false,
         type_keyword: false,
-        keywords: [], // A| keyword list
+        keywords: [], // A| keyword lijst
         pageused: [], // B|
         instakeywords: [], // C|
-        webkeywords: [], // D| url keywords
-        subdomain: [], // E| url domain
+        webkeywords: [], // D| url keyword
+        subdomain: [], // E| url domein
         report: {}
     }
     const [state, dispatch] = useReducer(SearchReducer, InitState)
     //-----------------------------------------------------------
-    //KEYWORD |A|  keyword list request
+    //KEYWORD |A|  keyword lijst request
     const setkeyword = async keyword => {
         try {
             setloading()
@@ -31,7 +31,7 @@ const SearchState = props => {
         }
 
     }
-    //KEYWORD |B|  pageused list request
+    //KEYWORD |B|  pageused lijst request + connectie Heroku
     const setpagedused = async keyword => {
         try {
             setloading()
@@ -45,7 +45,7 @@ const SearchState = props => {
         }
 
     }
-    //KEYWORD |C|  instergram list request
+    //KEYWORD |C|  instargram lijst request (werkt momenteel niet)
     const setinstergram = async keyword => {
         try {
             setloading()
@@ -58,7 +58,7 @@ const SearchState = props => {
             console.log(err)
         }
     }
-    // KEYWORD ALLsss
+    // KEYWORD ALGEHEEL
     const runkeywords = keyword => {
         setinstergram(keyword)
         setkeyword(keyword)
@@ -125,13 +125,13 @@ const SearchState = props => {
         })
     }
 
-    // SEARCHED
+    // Gezocht
     const setsearched = () => {
         dispatch({
             type: 'SET_SEARCHED'
         })
     }
-    // LOADING
+    // Laden
     const setloading = () => {
         dispatch({
             type: 'SET_LOADING'

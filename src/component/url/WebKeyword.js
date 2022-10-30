@@ -12,7 +12,7 @@ const WebKeyword = () => {
         <div className="website">
             <div className="web_keyword__list">
                 <div className="keywordList__heading">
-                    <h3>Related keywords</h3>
+                    <h3>Gerelateerde Keywords</h3>
                 </div>
                 {
                     token ? (
@@ -30,7 +30,7 @@ const WebKeyword = () => {
                                     return <li key={index}>{value}</li>
                                 }) : []
                             }
-                            <li className="sign_in__load"><Link to="/sign-in"> <span>sign in</span> to load more </Link>  </li>
+                            <li className="sign_in__load"><Link to="/sign-in"> <span>Log in</span> Om meer te laden </Link>  </li>
                         </ul>
                     )
                 }

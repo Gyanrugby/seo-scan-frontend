@@ -11,7 +11,7 @@
   min-width: 90%;
 }
 
-/* HEADEER */
+/* Header */
 header {
   padding: 15px 30px;
   display: flex;
@@ -44,9 +44,9 @@ header button {
   border: 2px solid #476760;
 }
 
-/* HEADER END */
+/* Einde header */
 
-/* SEARCH BAR */
+/* Zoek balk */
 .search {
   display: flex;
   justify-content: center;
@@ -110,9 +110,9 @@ form {
   }
 }
 
-/* SEARCH BAR END */
+/* Einde zoekbalk */
 
-/* KEYWORD */
+/* Keywords */
 .MainKeyword {
   display: flex;
   flex-direction: row;
@@ -178,7 +178,7 @@ form {
   flex-direction: column;
 }
 
-/*___ keyword used pages */
+/* Gebruikte keyword pagina */
 .keyword_used__pages {
   width: 100%;
   /* height: 100px; */
@@ -221,7 +221,7 @@ form {
 }
 
 
-/* instergram list */
+/* instargram lijst */
 .keyword__instagram {
   /* margin-top: 20vh; */
   margin-top: 1vh;
@@ -286,11 +286,11 @@ form {
   }
 }
 
-/* END OF KEYWORD */
+/* Einde van keywords */
 
 
 
-/* URL SEARCH */
+/* URL Zoekopdracht */
 /* __report_list */
 .report {
   display: flex;
@@ -452,9 +452,9 @@ form {
 
 }
 
-/* END OF URL SEARCH */
+/* Einde van zoekopdracht */
 
-/* AUTH */
+/* Authenticatie */
 .sign {
   width: 100%;
   height: 70vh;
@@ -524,9 +524,9 @@ form {
   background-color: #476760;
 }
 
-/* END AUTH */
+/* Einde authenticatie */
 
-/* profile */
+/* profiel */
 .profile {
   display: flex;
   justify-content: flex-start;
@@ -628,10 +628,10 @@ form {
   background: #476760;
 }
 
-/* ___end of scroll bar */
+/* Einde van scroll bar */
 
 
-/* __ load to sign in */
+/* Laden voor inloggen */
 .sign_in__load {
   text-align: center;
 }
@@ -645,9 +645,9 @@ form {
   color: #476760;
 }
 
-/* __ end load sign in */
+/* Eind laden voor inloggen */
 
-/* FOOTER */
+/* Footer */
 footer {
   width: 100%;
   z-index: 100;
