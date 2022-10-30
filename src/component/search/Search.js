@@ -14,6 +14,7 @@ const Search = () => {
         return (res !== null)
     };
 
+    // Zoek functies connected met de report API
     const handleSubmit = e => {
         e.preventDefault()
         
@@ -26,9 +27,6 @@ const Search = () => {
             url = url.split('/')[0];
             setText(url)
             
-            // console.log(`https://${url}`)
-            // const url = new URL(text)
-            // console.log(url.origin)
             setsearched()
             setType(false)
             runalldomains(`https://${url}`)
@@ -55,7 +53,7 @@ const Search = () => {
                     <div className="search">
                         <div className="search__main">
                             <form onSubmit={handleSubmit}>
-                                <input onChange={e => setText(e.target.value)} value={text}  className="search__input" type="text" placeholder=" Enter keyword or url" />
+                                <input onChange={e => setText(e.target.value)} value={text}  className="search__input" type="text" placeholder="voer keyword of url in" />
                                 <button className="small__btn">Go</button>
                                 <button className="small__large">search</button>
                             </form>
@@ -65,9 +63,9 @@ const Search = () => {
                     <div className="searchCenter">
                         <div className="search__main">
                             <form onSubmit={handleSubmit}>
-                                <input onChange={e => setText(e.target.value)} value={text} className="search__input" type="text" placeholder=" Enter keyword or url" />
+                                <input onChange={e => setText(e.target.value)} value={text} className="search__input" type="text" placeholder="voer keyword of url in" />
                                 <button className="small__btn">Go</button>
-                                <button className="small__large">search</button>
+                                <button className="small__large">zoeken</button>
                             </form>
                         </div>
                     </div>

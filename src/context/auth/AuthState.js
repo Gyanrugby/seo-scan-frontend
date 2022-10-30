@@ -3,7 +3,7 @@ import AuthContext from './AuthContext'
 import AuthReducer from './AuthReducer'
 import axios from 'axios';
 
-// send headers with requests
+// Verstuur de headers met requests voor acceptaties
 import SetauthToken from '../../utils/SetauthToken'
 
 const AuthState = props => {
@@ -14,9 +14,8 @@ const AuthState = props => {
         loading: false
     }
     const [state, dispatch] = useReducer(AuthReducer, InitState)
-    //---------------------------------------------------
-
-    // CHECK USER | loaduser
+  
+    // Controleer en | loaduser + de backend configuratie met de front end
     const loaduser = async () => {
         if(localStorage.token){
             SetauthToken(localStorage.token)
@@ -34,7 +33,7 @@ const AuthState = props => {
     }
 
 
-    // sign_up
+    // Authenticatie en parser naar JSON voor registereren
     const sign_up = async user => {
         const config = {
             headers: {
@@ -54,7 +53,7 @@ const AuthState = props => {
         }
     }
 
-    // sign_in
+    // Inloggen op het platform en setloading met API naar backend
     const sign_in = async user => {
         const config = {
             headers: {
@@ -85,7 +84,7 @@ const AuthState = props => {
     }
 
 
-    // sign_out
+    // Uitloggen binnen het platform
     const sign_out = () => {
         dispatch({
             type: 'SIGN_OUT'
@@ -97,7 +96,7 @@ const AuthState = props => {
             type: 'SET_LOADING'
         })
     }
-    //---------------------------------------------------
+    // De return van alle data naar de front end op account pagina
     return (
         <AuthContext.Provider value={{
             token: state.token,

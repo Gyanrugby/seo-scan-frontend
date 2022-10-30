@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import SearchState from '../../context/search/SearchContext'
@@ -13,7 +14,7 @@ const Subdomain = () => {
             <div className="sub_domains_all">
                 <div className="sub_domain_list">
                     <div className="keywordList__heading">
-                        <h3>Available sub Domains</h3>
+                        <h3>Beschikbare subdomeinen</h3>
                     </div>
                     {
                         token ? (
@@ -31,7 +32,7 @@ const Subdomain = () => {
                                         return <li key={index}><a target="blank" href={`https://${value}`}>{value}</a></li>
                                     }) : []
                                 }
-                                <li className="sign_in__load"><Link to="/sign-in"> <span>sign in</span> to load more </Link>  </li>
+                                <li className="sign_in__load"><Link to="/sign-in"> <span>Log in</span> Om meer te laden </Link>  </li>
                             </ul>
                         )
                     }

@@ -1,3 +1,4 @@
+// Geinstalleerde packages voor functionaliteit home pagina
 import React, {useContext, useEffect} from 'react'
 import Instakeyword from '../keyword/Instakeyword'
 import Keywords from '../keyword/Keywords'
@@ -26,11 +27,11 @@ const Home = () => {
             {/* True is keyword | false is domain */}
             
             {   
-                searched ? ( // show only if searched
-                    loading ? ( // loading call
+                searched ? ( // Alleen tonen wanneer erop wordt gezocht
+                    loading ? ( // laden van oproep
                         <Spinner />
                     ) : (
-                        type_keyword ? ( // keyword type domain or keyword
+                        type_keyword ? ( // keyword type domein of keyword
                             // KEYWORD
                             <div className="container">
                                 <div className="MainKeyword">
@@ -42,7 +43,7 @@ const Home = () => {
                                 </div>
                             </div>
                         ) : (
-                            // domain
+                            // domein
                             <div className="container">
                                 <Report />
                                 <div className="search_main">

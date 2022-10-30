@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom'
 import SearchState from '../../context/search/SearchContext'
 
 import AuthContext from '../../context/auth/AuthContext'
-
+// Momenteel niet werkend gekregen omdat je ook met auth moet inloggen op instagram
+// Het opzetten van de instagram scrapping
 const Instakeyword = () => {
     const {instakeywords} = useContext(SearchState)
     const {token} = useContext(AuthContext)

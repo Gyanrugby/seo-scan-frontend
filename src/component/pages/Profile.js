@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React, {useContext, useEffect} from 'react'
 import Avatar from '../layout/avatar.png'
 import AuthContext from '../../context/auth/AuthContext'
@@ -12,7 +13,7 @@ const Profile = props => {
         // eslint-disable-next-line
     }, [isAuthenticated])
 
-    
+    // Opzetten profiel pagina data wordt gereturnt vanuit backend
     return (
     
         <div className="container">

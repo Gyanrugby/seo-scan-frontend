@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React, {useContext} from 'react'
 import SearchState from '../../context/search/SearchContext'
 import Loading from './loading.gif'
@@ -9,6 +10,7 @@ const Report = () => {
         newreport = report
     }
  
+    // Alle data gescraped vanuit de Lighthouse API
     return (
         <>
             {

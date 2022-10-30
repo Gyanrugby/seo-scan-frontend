@@ -1,8 +1,10 @@
+// Alle packages voor functionaliteiten
 import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import SearchState from '../../context/search/SearchContext'
 import AuthContext from '../../context/auth/AuthContext'
 
+// Opzetten keywords
 const Keywords = () => {
     const {token} = useContext(AuthContext)
     const {keywords} = useContext(SearchState)
@@ -11,7 +13,7 @@ const Keywords = () => {
             <div className="keywords">
                 <div className="keyword__list">
                     <div className="keywordList__heading">
-                        <h3>Related keywords</h3>
+                        <h3>Gerelateerde Keywords</h3>
                     </div>
                     {
                         token ? (
@@ -29,7 +31,7 @@ const Keywords = () => {
                                         return <li key={index}>{value}</li>
                                     }) : []
                                 }
-                                <li className="sign_in__load"><Link to="/sign-in"> <span>sign in</span> to load more </Link>  </li>
+                                <li className="sign_in__load"><Link to="/sign-in"> <span>Log in</span> Om meer te laden </Link>  </li>
                             </ul>
                         )
                     }
