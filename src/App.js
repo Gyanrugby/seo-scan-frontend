@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Footer from './component/layout/Footer'

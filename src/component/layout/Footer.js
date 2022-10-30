@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React from 'react'
 
 const Footer = () => {

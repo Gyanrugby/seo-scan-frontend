@@ -65,7 +65,7 @@ const Search = () => {
                             <form onSubmit={handleSubmit}>
                                 <input onChange={e => setText(e.target.value)} value={text} className="search__input" type="text" placeholder="voer keyword of url in" />
                                 <button className="small__btn">Go</button>
-                                <button className="small__large">zoeken</button>
+                                <button className="small__large">search</button>
                             </form>
                         </div>
                     </div>

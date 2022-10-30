@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React, { useContext} from 'react'
 import {Link} from 'react-router-dom'
 import SearchState from '../../context/search/SearchContext'

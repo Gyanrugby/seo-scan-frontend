@@ -1,3 +1,4 @@
+// Alle packages voor functionaliteiten
 import React, {useContext} from 'react'
 import Avatar from './avatar.png'
 import Logo from './logo.png'
